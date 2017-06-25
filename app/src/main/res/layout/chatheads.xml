@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/chatheads_close"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="#888"
+            android:src="@drawable/ic_action_close" />
+
+        <ImageButton
+            android:id="@+id/chatheads_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/chathead" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chatheads_RecyclerView"
+            android:layout_width="50dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/chatheads_head"
+            android:layout_marginTop="4dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>
